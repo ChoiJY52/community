@@ -1,0 +1,7 @@
+.board_info{
+    border-bottom: 2px solid black;
+}
+.post_info{
+    margin: 10px;
+    border: 1px dashed black;
+}

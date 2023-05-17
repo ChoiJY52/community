@@ -1,0 +1,57 @@
+/* div {
+    border: 1px solid black;
+} */
+#root {
+    border: none;
+    margin: 0px;
+}
+#container {
+    width: 1340px;
+    margin: 0px auto;
+}
+header {
+    display: flex;
+    border: 2px solid black;
+    height: 100px;
+}
+#header_logo {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    
+}
+main {
+    display: flex;
+}
+ul {
+    margin: 0 auto;
+}
+li {
+    margin: 20px 0;
+    list-style: none;
+    font-size: 20px;
+    text-align: center;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(0, 26, 255);
+}
+#sidebar {
+    border: 2px solid black;
+    border-top: none;
+    width: 20%;
+    height: auto;
+}
+#contents {
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    width: 80%;
+    height: 1200px;
+}
+
+p{
+    margin: 0px 0px 10px 10px;
+}
