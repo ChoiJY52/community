@@ -1,7 +1,7 @@
 import React from 'react';
 import './post.css';
 
-class PostPage extends React.Component { //게시판 페이지 컴포넌트
+class PostPage extends React.Component { //개별 게시글 컴포넌트
     constructor(props){
         super(props);
         this.url = window.location.pathname;
@@ -27,7 +27,7 @@ class PostPage extends React.Component { //게시판 페이지 컴포넌트
                     return(
                         <div key={item.post_id} id='post'>
                             <h2 id='post_title'>제목 : {item.title}</h2>
-                            <p id='post_content'>내용 : {item.contents}</p>
+                            <p id='post_content'>내용 : <br></br> {item.contents}</p>
                         </div>
                     )
                 })}

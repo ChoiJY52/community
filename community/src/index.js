@@ -11,9 +11,7 @@ const menus = ["React", "Node.js", "MySQL", "MongoDB"];
 
 class Root extends React.Component { //전체페이지 컴포넌트
     constructor(){
-        super();
-        this.url = window.location.pathname;
-        this.LastPath = this.url.substring(this.url.lastIndexOf('/')+1);
+        super()
     }
 
     render() {

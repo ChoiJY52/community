@@ -5,3 +5,17 @@
     margin: 10px;
     border: 1px dashed black;
 }
+p.del_btn{
+    position: relative;
+}
+p.del_btn::after{
+    position: absolute;
+    content: "\00d7";
+    margin: 0px;
+    top: -10px;
+    right: 2px;
+    font-size: 30px;
+}
+p.del_btn:hover{
+    color: rgba(252, 0, 0, 0.651);
+}

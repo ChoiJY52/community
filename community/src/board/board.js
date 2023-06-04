@@ -1,14 +1,14 @@
 import React from 'react';
 import './board.css';
 
-class BoardPage extends React.Component {
+class BoardPage extends React.Component { // 개별 게시판 컴포넌트
     constructor(){
         super();
         this.url = window.location.pathname;
         this.board = this.url.substring(this.url.lastIndexOf('/')+1);
         this.state = {data: []};
     }
-    componentDidMount(){
+    componentDidMount(){ // 페이지가 로드 될 때 서버에 get요청
         fetch(`http://localhost:5000/getboard/${this.board}`)
         .then((response)=>response.json())
         .then((response)=>{

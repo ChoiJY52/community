@@ -2,7 +2,7 @@ import React from 'react';
 import {menus} from '../index';
 import './posting.css';
 
-class PostingPage extends React.Component {
+class PostingPage extends React.Component { // 글쓰기 컴포넌트
     render(){
         return(
             <div id='contents'>
