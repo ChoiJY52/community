@@ -1,5 +1,6 @@
 import React from 'react';
 import './board.css';
+import {del_post} from '../main/main.js';
 
 class BoardPage extends React.Component { // 개별 게시판 컴포넌트
     constructor(){
@@ -9,7 +10,7 @@ class BoardPage extends React.Component { // 개별 게시판 컴포넌트
         this.state = {data: []};
     }
     componentDidMount(){ // 페이지가 로드 될 때 서버에 get요청
-        fetch(`http://localhost:5000/getboard/${this.board}`)
+        fetch(`http://localhost:5000/get_board/${this.board}`)
         .then((response)=>response.json())
         .then((response)=>{
             this.setState({data: response})
@@ -27,6 +28,7 @@ class BoardPage extends React.Component { // 개별 게시판 컴포넌트
                 {data.length===0 ? (<h4>게시글이 없습니다.</h4>) : (data.map((item)=>{
                     return(
                         <div key={item.post_id} className='post_info'>
+                            <p className='del_post_btn' onClick={()=>del_post(item.post_id)}></p>
                             <h3 className='title'><a href={`http://localhost:3000/post/${item.post_id}`}>{item.title}</a></h3>
                             <p>{item.contents}</p>
                         </div>

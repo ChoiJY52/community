@@ -1,9 +1,18 @@
 .post_info{
+    margin: 10px;
     border: 1px dashed black;
 }
-.post a{
-    margin: 10px 5px
+p.del_post_btn{
+    position: relative;
 }
-.post p{
-    margin: 10px 5px
+p.del_post_btn::after{
+    position: absolute;
+    content: "\00d7";
+    margin: 0px;
+    top: -10px;
+    right: 2px;
+    font-size: 30px;
+}
+p.del_post_btn:hover{
+    color: rgba(252, 0, 0, 0.651);
 }

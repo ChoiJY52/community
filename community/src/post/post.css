@@ -1,0 +1,25 @@
+form#write_comment {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 50%;
+}
+div.comments{
+    margin: 5px 0px;
+    font-size: 18px;
+    position: relative;
+    border: 1px solid black;
+}
+p.del_comment_btn{
+    margin: 0;
+}
+p.del_comment_btn::after{
+    position: absolute;
+    content: "\00d7";
+    top: 0px;
+    right: 5px;
+    font-size: 25px;
+}
+p.del_comment_btn:hover{
+    color: rgba(252, 0, 0, 0.651);
+}

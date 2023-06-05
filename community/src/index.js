@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import PostPage from './post/post.js';
-import MainPage from './main/main.js';
+import {MainPage} from './main/main.js';
 import PostingPage from "./posting/posting.js";
 import BoardPage from './board/board.js';
 import './index.css';
@@ -10,10 +10,6 @@ import './index.css';
 const menus = ["React", "Node.js", "MySQL", "MongoDB"];
 
 class Root extends React.Component { //전체페이지 컴포넌트
-    constructor(){
-        super()
-    }
-
     render() {
         return( // 리액트 라우터를 통해 멀티페이지 구현(React는 기본적으로 싱글페이지를 지원)
             <div id='container'>

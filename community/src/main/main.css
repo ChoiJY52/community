@@ -5,10 +5,10 @@
     margin: 10px;
     border: 1px dashed black;
 }
-p.del_btn{
+p.del_post_btn{
     position: relative;
 }
-p.del_btn::after{
+p.del_post_btn::after{
     position: absolute;
     content: "\00d7";
     margin: 0px;
@@ -16,6 +16,6 @@ p.del_btn::after{
     right: 2px;
     font-size: 30px;
 }
-p.del_btn:hover{
+p.del_post_btn:hover{
     color: rgba(252, 0, 0, 0.651);
 }
